@@ -20,6 +20,8 @@ app.get( '/', cas.bounce, function ( req, res , next ) {
 	next();
 });
 
+app.get( '/logout', cas.logout );
+
 app.use(express.static(__dirname + '/../client'));
 
 app.listen(port, function () {
