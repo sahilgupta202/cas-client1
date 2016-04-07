@@ -11,9 +11,9 @@ app.use( session({
 }));
  
 var cas = new CASAuthentication({
-    cas_url         : 'http://localhost:8080/cas',
-    service_url     : 'http://localhost:3000',
-    cas_version : '2.0'
+    cas_url         : 'https://cas-server1.herokuapp.com',
+    service_url     : 'https://cas-client1.herokuapp.com',
+    cas_version		: '2.0'
 });
 
 app.get( '/', cas.bounce, function ( req, res , next ) {
