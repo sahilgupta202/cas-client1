@@ -2,7 +2,7 @@
   "name": "cas-client1",
   "version": "1.0.0",
   "dependencies": {
-    "cas-authentication": "0.0.8",
+    "cas-module-demo": "https://github.com/sahilgupta202/sahil-sdk.git",
     "express": "^4.13.4",
     "express-session": "^1.13.0"
   },
